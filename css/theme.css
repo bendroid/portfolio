@@ -1,0 +1,107 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+.navbar-default .navbar-nav>li>a, .dropdown-menu>li>a {
+  font-size: large;
+}
+
+.dropdown-header {
+  font-size: larger;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: #fff;
+  background-color: #55acee;
+  /*box-shadow: 0 3px 7px 0 #4f4a65;*/
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: #fff;
+  background-color: #55acee;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  color: #fff;
+  background-color: #55acee;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  background-color: #55acee;
+  color: #fff;
+}
+
+/*
+.ben {
+  border-radius: 50%;
+  box-shadow: 0 3px 7px 0 #4f4a65;
+  border: 2px solid #55acee !Important;
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  background-image: url(../images/ben-tiny.jpg), linear-gradient(#fff, #fff 25%, #e6e6e6);
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+*/
+
+.projects {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #f9f9f9;
+}
+
+.container .projects, .container-fluid .projects {
+  border-radius: 3px;
+}
+
+.projects p {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 768px) {
+	.projects h1, .projects .h1 {
+    font-size: 63px;
+}
+	.projects h1, .projects .h1 {
+    color: #444444;
+	}
+}
+
+/***************************************/
+
+@media (min-width: 768px) {
+.container .border, .container-fluid .border {
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: 0 3px 7px 0 #4f4a65;
+	}
+}
+
+.border {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+}
+
+
+
+/**********************************************/
+
+.media-heading  {
+
+}
