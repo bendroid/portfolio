@@ -16,6 +16,11 @@
 	<!-- Custom styles for this template -->
     <link href="css/paper/bootstrap.min.css" rel="stylesheet">
 	  <link href="css/theme.css" rel="stylesheet">
+	  
+	  <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/shCore.css" />
+	<link rel="stylesheet" type="text/css" href="css/shThemeDefault.css" />
+	
 	  <link rel="stylesheet" href="css/font-awesome.min.css">
 	  <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic' rel='stylesheet' type='text/css'>
     
@@ -55,12 +60,30 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="./">Fixed top</a></li>
+            <li><a href="./">Fixed top</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
+ <div class="container">
+		<a href="#" class="trigger trigger-left" style="float: left;" onclick="triggerLeft(event)"><span class="glyphicon glyphicon-align-justify"></span></a>
+		<a href="#" class="trigger trigger-right" style="float: right;" onclick="triggerRight(event)"><span class="glyphicon glyphicon-align-justify"></span></a>
+		
+<div id="swipeme" class="main">
+		<div id="swipeme-left" class="panel panel-left">
+			<div class="page-header">
+				<h2>About</h2>
+			</div>
+			<p>Built by Loz Calver:</p>
+			<ul>
+				<li><a href="https://github.com/kinglozzer" target="_blank">Github</a></li>
+				<li><a href="https://twitter.com/kinglozzer" target="_blank">Twitter</a></li>
+			</ul>
+			<p>Demo page built with the wonderful <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, icons by <a href="http://glyphicons.com/" target="_blank">Glyphicons</a>.</p>
+			<h3>Todo</h3>
+			<p>In version 2 I intend to rebuild SwipeMe from the ground-up, removing all CSS requirements and instead managing the menu transitions and positioning with Javascript - using CSS translations and fallbacks where possible.</p>
+		</div>
+		</div>
 <!-- ===================== CONTENT ================== -->
 
 <!-- ===================== HEADER =================== -->
@@ -72,6 +95,7 @@
 <div class="media-body">
   <h2 class="media-heading">Ben Collins<p><small>Front-End Web Developer</small></p></h2>
 </div>
+    <div class="social">
     <div class="media-body">
       <h2 class="pull-right">
       <a href="#" class="btn btn-lg btn-github fa fa-github"></a>
@@ -80,9 +104,9 @@
       <a href="#" class="btn btn-lg btn-linkedin fa fa-linkedin"></a>
 	  </h2>
     </div>
+    </div>
   </div>
 </div>
-
 <!--<div class="social-mobile">-->
   <div class="dropup">
     <div class="btn-group">
@@ -332,6 +356,13 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    	<script type="text/javascript" src="js/swipeme.min.js"></script>
+	<script type="text/javascript" src="js/plugins/swipeme.ltie9.min.js"></script>
+	<script type="text/javascript" src="js/plugins/swipeme.mouse.min.js"></script>
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushJScript.js"></script>
+	<script type="text/javascript" src="js/shBrushPhp.js"></script>
+	<script type="text/javascript" src="js/application.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
