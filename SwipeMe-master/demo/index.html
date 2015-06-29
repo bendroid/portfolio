@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SwipeMe - A lightweight JS library for swiping off-canvas menus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/shCore.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/shThemeDefault.css" />
+</head>
+<body>
+	<div class="navigation">
+		<a href="#" class="trigger trigger-left" style="float: left;" onclick="triggerLeft(event)"><span class="glyphicon glyphicon-align-justify"></span></a>
+		<a href="#" class="trigger trigger-right" style="float: right;" onclick="triggerRight(event)"><span class="glyphicon glyphicon-align-justify"></span></a>
+		<div class="container">
+			<div class="nav">
+				<a href="http://kinglozzer.github.io/SwipeMe/demo/index.html">Home</a>
+				<a href="https://github.com/kinglozzer/SwipeMe/" target="_blank">Download</a>
+			</div>
+		</div>
+		
+	</div>
+	<div id="swipeme" class="main">
+		<div id="swipeme-left" class="panel panel-left">
+			<div class="page-header">
+				<h2>About</h2>
+			</div>
+			<p>Built by Loz Calver:</p>
+			<ul>
+				<li><a href="https://github.com/kinglozzer" target="_blank">Github</a></li>
+				<li><a href="https://twitter.com/kinglozzer" target="_blank">Twitter</a></li>
+			</ul>
+			<p>Demo page built with the wonderful <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, icons by <a href="http://glyphicons.com/" target="_blank">Glyphicons</a>.</p>
+			<h3>Todo</h3>
+			<p>In version 2 I intend to rebuild SwipeMe from the ground-up, removing all CSS requirements and instead managing the menu transitions and positioning with Javascript - using CSS translations and fallbacks where possible.</p>
+		</div>
+		<div id="swipeme-main" class="panel panel-main">
+			<div class="contents">
+				<div class="jumbotron">
+					<div class="container">
+						<h1>SwipeMe</h1>
+						<p>A lightweight library for swiping off-canvas menus</p>
+					</div>
+				</div>
+				<p>SwipeMe is a Javascript library built to swipe open/close off-canvas navigation menus &ndash; currently relying on CSS3 animations. When a swipe is detected, SwipeMe will add (or remove) the appropriate CSS class from a main 'container' element. For an in-depth example of how to implement an off-canvas navigation pattern, see <a href="http://jasonweaver.name/lab/offcanvas/" target="_blank">this brilliant example</a> by Jason Weaver.</p>
+				<h2>Implementation</h2>
+				<h3>HTML</h3>
+				<div data-swipeme-ignore="true">
+					<pre class="brush: php">
+	&lt;div id="swipeme"&gt;
+		&lt;div class="off-canvas-left">Left off-canvas&lt;/div&gt;
+		&lt;div class="main-content">Main content&lt;/div&gt;
+		&lt;div class="off-canvas-right">Right off-canvas&lt;/div&gt;
+	&lt;/div&gt;
+					</pre>
+				</div>
+				<h3>Javascript</h3>
+				<div data-swipeme-ignore="true">
+					<pre class="brush: js">
+	var swipe = new SwipeMe(document.getElementById('swipeme'));
+					</pre>
+				</div>
+				<h2>Customisation</h2>
+				<h3>Disabling SwipeMe on certain elements</h3>
+				<p>You may wish to prevent SwipeMe from triggering a swipe event when touching certain elements on a page &ndash; a common example being an image carousel. Simply add a <code>data-swipeme-ignore="true"</code> attribute to prevent swipe events being triggered when the element, or any of its child elements, are touched.</p>
+				<h3>Options</h3>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Option</th>
+							<th>Default</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>accessClasses</code></td>
+							<td><pre>
+{
+	left: 'access-left',
+	right: 'access-right'
+}							</pre></td>
+							<td>An object containing the class names that should be applied when exposing the left and right hand menus</td>
+						</tr>
+						<tr>
+							<td><code>direction</code></td>
+							<td><pre>
+[
+	'left',
+	'right'
+]						</pre></td>
+							<td>A array describing in which direction(s) off-canvas menus are available. May be passed as a string "left" or "right"</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div id="swipeme-right" class="panel panel-right">
+			<div class="page-header">
+				<h2>Caveats</h2>
+			</div>
+			<h3>Browser Support</h3>
+			<p>As the library currently only adds and removes CSS classes, all animations are CSS-generated &ndash; so &lt;=IE9 and Opera Mini won't get any animations. Ancient versions of IE will need also the Array.indexOf prototype available <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf" target="_blank">here</a>.</p>
+			<h3>iOS 7</h3>
+			<p>iOS 7 adds swipe navigation gestures to Safari, which (as far as I'm aware) can't be disabled. It's still possible to use this library with iOS 7 &ndash; the native gestures are only triggered when swiping from the very edge of the page.</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../swipeme.min.js"></script>
+	<script type="text/javascript" src="../plugins/swipeme.ltie9.min.js"></script>
+	<script type="text/javascript" src="../plugins/swipeme.mouse.min.js"></script>
+	<script type="text/javascript" src="assets/js/shCore.js"></script>
+	<script type="text/javascript" src="assets/js/shBrushJScript.js"></script>
+	<script type="text/javascript" src="assets/js/shBrushPhp.js"></script>
+	<script type="text/javascript" src="assets/js/application.min.js"></script>
+</body>
+</html>
