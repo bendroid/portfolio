@@ -14,7 +14,23 @@ body {
   padding-bottom: 0;
 }
 
-/*************** NAVBAR *********************/
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/*************** NAVBAR *********************
 
 .navbar-default .navbar-nav>li>a, .dropdown-menu>li>a {
   font-size: large;
@@ -27,7 +43,7 @@ body {
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
   color: #fff;
   background-color: #55acee;
-  /*box-shadow: 0 3px 7px 0 #4f4a65;*/
+  box-shadow: 0 3px 7px 0 #4f4a65;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
@@ -44,7 +60,7 @@ body {
   background-color: #55acee;
   color: #fff;
 }
-
+*********/
 /*************** CUSTOM *********************/
 
 .media-heading.inverse {
