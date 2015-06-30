@@ -9,6 +9,17 @@
  * 3. I do recommend using LESS for customizations.
  * 
  */
+ div .red{
+    width: 100px;
+    height: 100px;
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+}
+
+div .red:hover {
+    width: 300px;
+    height: 300px;
+}
 /* Global
 / -------------------------------------------------- */
 html {
@@ -98,6 +109,7 @@ html {
 .dash-navbar-top .navbar-nav > li.dropdown.open > a {
   background-color: #007bb7;
   color: #fff;
+  border: 1px solid #d3d1dd;
 }
 .dash-navbar-top .navbar-nav > li.dropdown.open > a:hover,
 .dash-navbar-top .navbar-nav > li.dropdown.open > a:focus {
