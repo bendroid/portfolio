@@ -26,12 +26,24 @@
 body {
   min-height: 2000px;
 }
+
+.btn-social {
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 25px;
+    }
+
+.btn-social-nav {
+    margin: 5px 0 0 5px;
+	text-align: center;
+    }
+
 @media screen and (max-width: 500px) {
   img {
     height: 100%;
     width: 100%;
     }
-  h1, p {
+  h1, {
     font-size: 35px;
     margin: 0;
     padding: 0;
@@ -43,28 +55,6 @@ body {
   .container-fluid {
     border: 2px solid #81FF00 !Important;
     }
-    
-  .btn-social {
-    border-radius: 50%;
-    padding: 15px;
-    font-size: 25px;
-    }
-  .btn-social-nav {
-    margin: 15px 0px 0px 5px;
-    padding: 0;
-    border-bottom: 1px solid #d3d1dd;
-    
-    }
-    
-  .dash-navbar-left .dnl-nav-title {
-    text-transform: uppercase;
-    color: #fff;
-    border-bottom: 1px solid #d3d1dd;
-    /*padding: 25px 25px;*/
-    /*font-size: 15px;*/
-    /*letter-spacing: 1px;*/
-    text-align: center;
-}
 }
 </style>
     
@@ -90,7 +80,7 @@ body {
  <!-- This dropdown is for avatar -->
  <ul class="nav navbar-nav navbar-right navbar-avatar">
  <li class="dropdown">
- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="images/ben-sm.jpg" class="dnt-avatar" alt="Reardestani avatar"></a>
+ <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="images/ben-sm.jpg" class="dnt-avatar" alt="Avatar"></a>
  <ul class="dropdown-menu" role="menu">
  <li><a href="#">Standard <span>go pro</span></a></li>
  <li><a href="#">Upload</a></li>
@@ -106,11 +96,12 @@ body {
  <button type="submit" class="btn"><span class="fa fa-search"></span></button>
  </form>-->
  <!-- This dropdown is for normal links -->
- <ul class="nav navbar-nav navbar-right">
- <div class="btn-social"><a href="https://github.com/bendroid/" target="_blank" class="btn btn-social btn-lg btn-github fa fa-github"></a>
+ <div class="btn-social-nav pull-right"><a href="https://github.com/bendroid/" target="_blank" class="btn btn-social btn-lg btn-github fa fa-github"></a>
       <a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-social btn-lg btn-twitter fa fa-twitter"></a>
       <a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-social btn-lg btn-google-plus fa fa-google-plus"></a>
       <a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-social btn-lg btn-linkedin fa fa-linkedin"></a></div>
+ <ul class="nav navbar-nav navbar-right">
+ <!-- ======== DROP DOWN ============= --
  <li class="dropdown">
  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="fa fa-angle-down"></span></a>
  <ul class="dropdown-menu" role="menu">
@@ -118,7 +109,7 @@ body {
  <li><a href="#">Link 2</a></li>
  <li><a href="#">Link 3</a></li>
  </ul>
- </li>
+ </li>-->
  </ul> 
  </div><!-- /.navbar-collapse -->
  </div><!-- /.container-fluid -->
