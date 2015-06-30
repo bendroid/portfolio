@@ -26,31 +26,475 @@
 body {
   min-height: 2000px;
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   img {
-    height: 35px;
-    width: 35px;
+    height: 100%;
+    width: 100%;
     }
+  h1, p {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    }
+  .new {
+    padding: 15px;
+    font-size: 25px;
+    }
+  .container-fluid {
+    border: 2px solid #81FF00 !Important;
+    }
+    
+  .btn-social {
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 25px;
+    }
+  .btn-social-nav {
+    margin: 15px 0px 0px 5px;
+    padding: 0;
+    border-bottom: 1px solid #d3d1dd;
+    
+    }
+    
+  .dash-navbar-left .dnl-nav-title {
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 1px solid #d3d1dd;
+    /*padding: 25px 25px;*/
+    /*font-size: 15px;*/
+    /*letter-spacing: 1px;*/
+    text-align: center;
+}
 }
 </style>
     
   </head>
 <body>
 
+<nav class="navbar navbar-static-top dash-navbar-top dnl-visible">
+ <div class="container-fluid">
+ <!-- Brand and toggle get grouped for better mobile display -->
+ <div class="navbar-header">
+ <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dnt-collapse">
+ <span class="sr-only">Toggle navigation</span>
+ <span class="fa fa-ellipsis-v"></span>
+ </button>
+ <button class="dnl-btn-toggle">
+ <span class="fa fa-bars"></span>
+ </button>
+ <a class="navbar-brand" href="#">Ben Collins <p><span>Front End Web Developer</span></p></a>
+ </div>
+
+ <!-- Collect the nav links, forms, and other content for toggling -->
+ <div class="collapse navbar-collapse" id="dnt-collapse">
+ <!-- This dropdown is for avatar -->
+ <ul class="nav navbar-nav navbar-right navbar-avatar">
+ <li class="dropdown">
+ <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="images/ben-sm.jpg" class="dnt-avatar" alt="Reardestani avatar"></a>
+ <ul class="dropdown-menu" role="menu">
+ <li><a href="#">Standard <span>go pro</span></a></li>
+ <li><a href="#">Upload</a></li>
+ <li class="active"><a href="#">Active link</a></li>
+ <li><a href="#">Logout</a></li>
+ </ul>
+ </li>
+ </ul>
+ <!--<form class="navbar-form navbar-right dnt-navbar-form" role="search">
+ <div class="form-group">
+ <input type="text" class="form-control" placeholder="Search">
+ </div>
+ <button type="submit" class="btn"><span class="fa fa-search"></span></button>
+ </form>-->
+ <!-- This dropdown is for normal links -->
+ <ul class="nav navbar-nav navbar-right">
+ <div class="btn-social"><a href="https://github.com/bendroid/" target="_blank" class="btn btn-social btn-lg btn-github fa fa-github"></a>
+      <a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-social btn-lg btn-twitter fa fa-twitter"></a>
+      <a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-social btn-lg btn-google-plus fa fa-google-plus"></a>
+      <a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-social btn-lg btn-linkedin fa fa-linkedin"></a></div>
+ <li class="dropdown">
+ <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="fa fa-angle-down"></span></a>
+ <ul class="dropdown-menu" role="menu">
+ <li><a href="#">Link 1</a></li>
+ <li><a href="#">Link 2</a></li>
+ <li><a href="#">Link 3</a></li>
+ </ul>
+ </li>
+ </ul> 
+ </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+ </nav> <!-- /.navbar -->
+
+ <!-- Dash Navbar Left 
+ Available versions: dnl-visible, dnl-hidden -->
+ <div class="dash-navbar-left dnl-visible">
+ <p class="btn-social-nav"><a href="https://github.com/bendroid/" target="_blank" class="btn btn-social btn-lg btn-github fa fa-github"></a>
+      <a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-social btn-sm btn-twitter fa fa-twitter"></a>
+      <a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-social btn-lg btn-google-plus fa fa-google-plus"></a>
+      <a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-social btn-lg btn-linkedin fa fa-linkedin"></a></p>
+ <ul class="dnl-nav">
+ <li>
+ <a class="collapsed" data-toggle="collapse" href="#collapseProject1" aria-expanded="false" aria-controls="collapseProject1">
+ <span class="glyphicon glyphicon-folder-open dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 1</span>
+ <span class="fa fa-angle-up dnl-btn-sub-collapse"></span>
+ </a>
+ <!-- PROJECT 1 DROPDOWN -->
+ <ul class="dnl-sub-one collapse" id="collapseProject1">
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">index.html</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">theme.css</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="fa fa-github dnl-link-icon"></span>
+ <span class="dnl-link-text">Github</span>
+ </a>
+ </li>
+ </ul>
+ </li>
+ <li>
+ <a class="collapsed" data-toggle="collapse" href="#collapseProject2" aria-expanded="false" aria-controls="collapseProject2">
+ <span class="glyphicon glyphicon-folder-open dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 2</span>
+ <span class="fa fa-angle-up dnl-btn-sub-collapse"></span>
+ </a>
+ <!-- PROJECT 2 DROPDOWN -->
+ <ul class="dnl-sub-one collapse" id="collapseProject2">
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">index.html</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">theme.css</span>
+ </a>
+ </li>
+<li>
+ <a href="#">
+ <span class="fa fa-github dnl-link-icon"></span>
+ <span class="dnl-link-text">Github</span>
+ </a>
+ </li>
+ </ul>
+ </li>
+ <li>
+ <a class="collapsed" data-toggle="collapse" href="#collapseProject3" aria-expanded="false" aria-controls="collapseProject3">
+ <span class="glyphicon glyphicon-folder-open dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 3</span>
+ <span class="fa fa-angle-up dnl-btn-sub-collapse"></span>
+ </a>
+ <!-- PROJECT 3 DROPDOWN -->
+ <ul class="dnl-sub-one collapse" id="collapseProject3">
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">index.html</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">theme.css</span>
+ </a>
+ </li>
+<li>
+ <a href="#">
+ <span class="fa fa-github dnl-link-icon"></span>
+ <span class="dnl-link-text">Github</span>
+ </a>
+ </li>
+ </ul>
+ </li>
+ <li>
+ <a class="collapsed" data-toggle="collapse" href="#collapseProject4" aria-expanded="false" aria-controls="collapseProject4">
+ <span class="glyphicon glyphicon-folder-open dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 4</span>
+ <span class="fa fa-angle-up dnl-btn-sub-collapse"></span>
+ </a>
+ <!-- PROJECT 4 DROPDOWN -->
+ <ul class="dnl-sub-one collapse" id="collapseProject4">
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">index.html</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">theme.css</span>
+ </a>
+ </li>
+<li>
+ <a href="#">
+ <span class="fa fa-github dnl-link-icon"></span>
+ <span class="dnl-link-text">Github</span>
+ </a>
+ </li>
+ </ul>
+ </li>
+<li>
+ <a class="collapsed" data-toggle="collapse" href="#collapseProject5" aria-expanded="false" aria-controls="collapseProject5">
+ <span class="glyphicon glyphicon-folder-open dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 5</span>
+ <span class="fa fa-angle-up dnl-btn-sub-collapse"></span>
+ </a>
+ <!-- PROJECT 5 DROPDOWN -->
+ <ul class="dnl-sub-one collapse" id="collapseProject5">
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">index.html</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">theme.css</span>
+ </a>
+ </li>
+<li>
+ <a href="#">
+ <span class="fa fa-github dnl-link-icon"></span>
+ <span class="dnl-link-text">Github</span>
+ </a>
+ </li>
+ </ul>
+ </li>
+<li>
+ <a class="collapsed" data-toggle="collapse" href="#collapseProject6" aria-expanded="false" aria-controls="collapseProject6">
+ <span class="glyphicon glyphicon-folder-open dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 6</span>
+ <span class="fa fa-angle-up dnl-btn-sub-collapse"></span>
+ </a>
+ <!-- PROJECT 6 DROPDOWN -->
+ <ul class="dnl-sub-one collapse" id="collapseProject6">
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">index.html</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">theme.css</span>
+ </a>
+ </li>
+<li>
+ <a href="#">
+ <span class="fa fa-github dnl-link-icon"></span>
+ <span class="dnl-link-text">Github</span>
+ </a>
+ </li>
+ </ul>
+ </li>
+<li>
+ <a class="collapsed" data-toggle="collapse" href="#collapseProject7" aria-expanded="false" aria-controls="collapseProject7">
+ <span class="glyphicon glyphicon-folder-open dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 7</span>
+ <span class="fa fa-angle-up dnl-btn-sub-collapse"></span>
+ </a>
+ <!-- PROJECT 7 DROPDOWN -->
+ <ul class="dnl-sub-one collapse" id="collapseProject7">
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">index.html</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">theme.css</span>
+ </a>
+ </li>
+<li>
+ <a href="#">
+ <span class="fa fa-github dnl-link-icon"></span>
+ <span class="dnl-link-text">Github</span>
+ </a>
+ </li>
+ </ul>
+ </li>
+ <li>
+ <a class="collapsed" data-toggle="collapse" href="#collapseProject8" aria-expanded="false" aria-controls="collapseProject8">
+ <span class="fa fa-folder-open dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 8</span>
+ <span class="fa fa-angle-up dnl-btn-sub-collapse"></span>
+ </a>
+ <!-- PROJECT 8 DROPDOWN -->
+ <ul class="dnl-sub-one collapse" id="collapseProject8">
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">index.html</span>
+ </a>
+ </li>
+<li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">theme.css</span>
+ </a>
+ </li>
+ <li>
+ <a class="collapsed" data-toggle="collapse" href="#collapsecollapseProject8LevelTwo" aria-expanded="false" aria-controls="collapsecollapseProject8LevelTwo">
+ <span class="fa fa-level-down dnl-link-icon"></span>
+ <span class="dnl-link-text">More</span>
+ <span class="fa fa-angle-up dnl-btn-sub-collapse"></span>
+ </a>
+ <!-- PROJECT 1 DROPDOWN **LEVEL 2** -->
+ <ul class="dnl-sub-two collapse" id="collapsecollapseProject8LevelTwo">
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 8 Level 2</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 8 Level 2</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="fa fa-link dnl-link-icon"></span>
+ <span class="dnl-link-text">Project 8 Level 2</span>
+ </a>
+ </li>
+ </ul>
+ </li>
+ </ul>
+ </li>
+<div class="btn-social-nav"><a href="https://github.com/bendroid/" target="_blank" class="btn btn-social btn-lg btn-github fa fa-github"></a>
+      <a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-social btn-lg btn-twitter fa fa-twitter"></a>
+      <a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-social btn-lg btn-google-plus fa fa-google-plus"></a>
+      <a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-social btn-lg btn-linkedin fa fa-linkedin"></a></div>
+ </ul>
+ </div> <!-- /.dash-navbar-left -->
+
+<div class="content-wrap dnl-visible content-opacity" data-effect="dnl-overlay">
+
 <div class="container-fluid">
+
   <div class="row">
+   <div class="col-xs-12">
   <h1 class="text-center">Ben Collins<p><small>Front End Web Developer</small></p></h1>
+  </div><!-- /.col-xs-12 -->
+  </div><!-- /.row -->
+  <div class="row">
     <div class="col-xs-12 col-md-6 col-lg-3">
       <img class="img-responsive" src="images/ben-sm.jpg">
-    </div>
-    <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-md-6 col-lg-3 text-center">
+        <a href="https://github.com/bendroid/" target="_blank" class="btn btn-social btn-lg btn-github fa fa-github"></a>
+      <a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-social btn-lg btn-twitter fa fa-twitter"></a>
+      <a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-social btn-lg btn-google-plus fa fa-google-plus"></a>
+      <a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-social btn-lg btn-linkedin fa fa-linkedin"></a>
+    </div><!-- /.col-xs-12 -->
+    </div><!-- /.col-xs-12 -->
+    </div><!-- /.row -->
+    <div class="row">
+    <div class="col-xs-3 col-md-6 col-lg-3">
+      <img class="img-responsive" src="images/ben-sm.jpg">
+        <h4 class="text-center">Project 1</h4>
+          <p><a href="https://github.com/bendroid/portfolio" target="_blank" class="btn btn-xs btn-github" role="button"><i class="fa fa-github"></i> github</a> <a href="#" class="btn btn-xs btn-primary pull-right" role="button">Details</a></p>
+    </div><!-- /.col -->
+    <div class="col-xs-3 col-md-6 col-lg-3">
+      <img class="img-responsive" src="images/ben-sm.jpg">
+    </div><!-- /.col -->
+    <div class="col-xs-3 col-md-6 col-lg-3">
+      <img class="img-responsive" src="images/ben-sm.jpg">
+    </div><!-- /.col -->
+    <div class="col-xs-3 col-md-6 col-lg-3">
+      <img class="img-responsive" src="images/ben-sm.jpg">
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2 col-md-3 col-lg-3 text-center">
+    <img class="img-responsive" src="images/ben-sm.jpg">
+        <h4 class="text-center">Project 1</h4>
+          <div class="col-xs-12">
+          <p><a href="https://github.com/bendroid/portfolio" target="_blank" class="btn btn-xs btn-github pull-left" role="button"><i class="fa fa-github"></i> github</a> <a href="#" class="btn btn-xs btn-primary pull-right" role="button">Details</a></p>
+          </div><!-- /.col -->
+	    <a href="https://github.com/bendroid/" target="_blank" class="btn btn-lg btn-github fa fa-github"></a>
+      <a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-lg btn-twitter fa fa-twitter"></a>
+      <a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-lg btn-google-plus fa fa-google-plus"></a>
+      <a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-lg btn-linkedin fa fa-linkedin"></a>
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+  <div class="row">
+    <div class="col-xs-3 col-md-6 col-lg-3">
       <img class="img-responsive" src="images/ben-sm.jpg">
     </div>
-    <div class="col-xs-12 col-md-6 col-lg-3">
+    <div class="col-xs-3 col-md-6 col-lg-3">
       <img class="img-responsive" src="images/ben-sm.jpg">
     </div>
-  </div>
-</div>
+    <div class="col-xs-3 col-md-6 col-lg-3">
+      <img class="img-responsive" src="images/ben-sm.jpg">
+    </div>
+    <div class="col-xs-3 col-md-6 col-lg-3">
+      <img class="img-responsive" src="images/ben-sm.jpg">
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</div><!-- /.container-fluid -->
+
+  
+  <div class="container-fluid">
+  <!-- SOCIAL BUTTONS -->
+  <div class="row">
+  <div class="col-xs-12">
+  <!-- EXTRA SMALL -->
+		  <a href="https://github.com/bendroid/" target="_blank" class="btn btn-xs btn-github fa fa-github"></a>
+      <a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-xs btn-twitter fa fa-twitter"></a>
+      <a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-xs btn-google-plus fa fa-google-plus"></a>
+      <a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-xs btn-linkedin fa fa-linkedin"></a>
+      </div><!-- /.col-xs-12 -->
+      </div><!-- /.row -->
+      
+      <div class="row">
+      <div class="col-xs-12">
+      <!-- SMALL -->
+  <a href="https://github.com/bendroid/" target="_blank" class="btn btn-sm btn-github fa fa-github"></a>
+      <a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-sm btn-twitter fa fa-twitter"></a>
+      <a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-sm btn-google-plus fa fa-google-plus"></a>
+      <a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-sm btn-linkedin fa fa-linkedin"></a>
+      </div><!-- /.col-xs-12 -->
+      </div><!-- /.row -->
+      
+      <div class="row">
+      <div class="col-xs-12">
+      <!-- MEDIUM -->
+      <a href="https://github.com/bendroid/" target="_blank" class="btn btn-md btn-github fa fa-github"></a>
+      <a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-md btn-twitter fa fa-twitter"></a>
+      <a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-md btn-google-plus fa fa-google-plus"></a>
+      <a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-md btn-linkedin fa fa-linkedin"></a>
+      </div><!-- /.col-xs-12 -->
+      </div><!-- /.row -->
+      
+      <div class="row">
+      <div class="col-xs-12">
+      <!-- LARGE -->
+      <a href="https://github.com/bendroid/" target="_blank" class="btn btn-lg btn-github fa fa-github"></a>
+      <a href="https://twitter.com/jaemood/" target="_blank" class="btn btn-lg btn-twitter fa fa-twitter"></a>
+      <a href="https://plus.google.com/110080867018847121215/" target="_blank" class="btn btn-lg btn-google-plus fa fa-google-plus"></a>
+      <a href="https://www.linkedin.com/pub/ben-collins/15/663/b43" target="_blank" class="btn btn-lg btn-linkedin fa fa-linkedin"></a>
+      </div><!-- /.col-xs-12 -->
+      </div><!-- /.row -->
+      
+</div><!-- /.container-fluid -->
+</div><!-- /.content-wrap -->
 
 <!-- =============== JAVASCRIPTS ================ -->
 
