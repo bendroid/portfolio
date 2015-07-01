@@ -5,7 +5,11 @@ html {
 }
 */
 
-div[class*='col-'] {border: 2px solid #55acee !Important;}
+div[class*='col-xs-'] {border: 2px solid #55acee !Important;}
+
+div[class*='col-md-'] {border: 2px solid #FF001A !Important;}
+
+div[class*='col-lg-'] {border: 2px solid #EE00FF !Important;}
 
 body {
   font-family: 'Roboto', sans-serif;
