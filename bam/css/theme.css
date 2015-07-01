@@ -5,6 +5,8 @@ html {
 }
 */
 
+div[class*='col-'] {border: 2px solid #55acee !Important;}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -25,156 +27,6 @@ a:hover {
 
 a:active {
     text-decoration: none;
-}
-
-/*************** NAVBAR *********************
-
-.navbar-default .navbar-nav>li>a, .dropdown-menu>li>a {
-  font-size: large;
-}
-
-.dropdown-header {
-  font-size: larger;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-  color: #fff;
-  background-color: #55acee;
-  box-shadow: 0 3px 7px 0 #4f4a65;
-}
-
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-  color: #fff;
-  background-color: #55acee;
-}
-
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
-  color: #fff;
-  background-color: #55acee;
-}
-
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-  background-color: #55acee;
-  color: #fff;
-}
-*********/
-/*************** CUSTOM *********************/
-/*
-.media-heading.inverse {
-  color: #fff;
-}
-
-@media screen and (max-width: 600px) {
-  .social-mobile a.btn.btn-lg {
-  font-size: 22px;
-  height: 50px;
-  width: 50px;
-  }
-  .float {
-  height: 50px;
-  width: 50px;
-  }
-  .media-heading {
-  font-size: 30px;
-  }
-}
-*/
-
-
-@media screen and (max-width: 767px) {
-   .social a {
-   display: none;
-   }
-}
-
-@media screen and (min-width: 768px) {
-   .float {
-   display: none;
-   }
-}
-
-/*
-@media screen and (max-width: 1400px) {
-   .social a {
-   font-size: 80%;
-   }
-}
-
-@media screen and (max-width: 1300px) {
-   .social a {
-   font-size: 70%;
-   }
-}
-
-@media screen and (max-width: 1200px) {
-   .social a {
-   font-size: 60%;
-   }
-}
-
-*/
-
-
-   .social a {
-   font-size: 2.39vw;
-   }
-
-
-
-.float{
-  background-image: url(../images/ben-tiny.jpg), linear-gradient(#fff, #fff 25%, #e6e6e6);
-  border-radius: 50%;
-  box-shadow: 0 3px 7px 0 #4f4a65;
-  border: 2px solid #55acee !Important;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-}
-
-.float:focus, .float:active:focus, .float.active:focus {
-  background-image: url(../images/ben-tiny.jpg), linear-gradient(#fff, #fff 25%, #e6e6e6);
-  border-radius: 50%;
-  border: 2px solid #dd4b39 !Important;
-  outline: 0 none;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-}
-
-.btn-group {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 61px;
-  height: 61px;
-  z-index: 100;
-  display: inline;
-  text-decoration: none;
-  border: none;
-}
-
-.social-mobile {
-  float: right;
-  list-style: none outside none;
-  margin: 0;
-  padding: 0;
-  background:none;
-  border:none;
-  box-shadow:none;
-}
-
-.social-mobile li {
-  display: block;
-  list-style: none outside none;
-  margin: 3px 0 15px 0;
-}
-
-.social-mobile a {
-  width: 61px;
-  height: 61px;
-  padding: 12px 15px 12px 15px;
 }
 
 .ben {
@@ -287,12 +139,9 @@ section {
   padding-right: 10px;
 }
 
-div[class*='col-'] {border: 2px solid #55acee !Important;}
 
-h2.title.social {
-  padding: 0;
-  margin: 0;
-}
+
+
 
 .bio {
   padding: 30px;
@@ -348,11 +197,7 @@ section.projects p {
   height: 100%;
 }
 
-.dnl.social a {
-  font-size: 80%;
-  padding: 5px;
-  margin: 5px;
-}
+
 
 @media screen and (min-width: 768px) {
   .projects h1, .projects .h1 {
@@ -458,121 +303,4 @@ section.projects p {
 .project-help{
   font-size: 12px;
 }
-
-/************************ SOCIAL *************************/
-
-.btn-google-plus {
-  color:#fff;
-  background-color:#dd4b39;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-google-plus:hover {
-  color:#fff;
-  background-color:#ca3523;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-facebook {
-  color:#fff;
-  background-color:#3b5998;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-facebook:hover {
-  color:#fff;
-  background-color:#30487b;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-github {
-  color:#fff;
-  background-color:#444;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-github:hover {
-  color:#fff;
-  background-color:#303030;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-twitter {
-  color:#fff;
-  background-color:#55acee;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-twitter:hover {
-  color:#fff;
-  background-color:#309aea;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-stack-overflow {
-  color:#fff;
-  background-color:#d38b28;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-stackoverflow:hover {
-  color:#fff;
-  background-color:#d37a00;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-linkedin {
-  color:#fff;
-  background-color:#007bb7;
-  border-color:rgba(0,0,0,0.2);
-}
-
-.btn-linkedin:hover {
-  color:#fff;
-  background-color:#d37a00;
-  border-color:rgba(0,0,0,0.2);
-}
-
-/*
-.btn-social:hover i, .triggeredHover {
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-ms--transform: rotate(360deg);
-	transform: rotate(360deg);
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	transition: all 0.2s;
-}
-
-.social-circle i {
-	color: #fff;
-	-webkit-transition: all 0.8s;
-	-moz-transition: all 0.8s;
-	-o-transition: all 0.8s;
-	-ms-transition: all 0.8s;
-	transition: all 0.8s;
-}
-
-.social-circle li a {
-	display:inline-block;
-	position:relative;
-	margin:0 auto 0 auto;
-	-moz-border-radius:50%;
-	-webkit-border-radius:50%;
-	border-radius:50%;
-	text-align:center;
-	width: 50px;
-	height: 50px;
-	font-size:20px;
-}
-
-.social-circle li i {
-	margin:0;
-	line-height:50px;
-	text-align: center;
-}
-*/
-/**************************************/
 
