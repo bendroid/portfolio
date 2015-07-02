@@ -1,44 +1,19 @@
-/*
-.social a {
-   font-size: 2.39vw;
-   }
-*/
-
-
-.float{
-  background-image: url(../images/ben-tiny.jpg), linear-gradient(#fff, #fff 25%, #e6e6e6);
-  border-radius: 50%;
-  box-shadow: 0 3px 7px 0 #4f4a65;
-  border: 2px solid #55acee !Important;
-  width: 50px;
-  height: 50px;
-  padding: 0;
+.btn-social {
+   padding: 9px 11px 9px 11px;
+   border-radius: 50%;
 }
 
-.float:focus, .float:active:focus, .float.active:focus {
-  background-image: url(../images/ben-tiny.jpg), linear-gradient(#fff, #fff 25%, #e6e6e6);
-  border-radius: 50%;
-  border: 2px solid #dd4b39 !Important;
-  outline: 0 none;
-  width: 50px;
-  height: 50px;
-  padding: 0;
+.btn-social-lg {
+   text-transform: uppercase;
+   color: #fff;
+   border-bottom: 1px solid #d3d1dd;
+   padding: 15px 15px;
+   font-size: 25px;
+   letter-spacing: 1px;
+   text-align: center;
 }
 
-.btn-group {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 61px;
-  height: 61px;
-  z-index: 100;
-  display: inline;
-  text-decoration: none;
-  border: none;
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .social-mobile a.btn.btn-lg {
   font-size: 22px;
   height: 50px;
@@ -51,52 +26,19 @@
   .media-heading {
   font-size: 30px;
   }
-}
-
-@media screen and (max-width: 767px) {
-   .social a {
-   display: none;
-   }
-}
-
-@media screen and (min-width: 768px) {
-   .float {
-   display: none;
-   }
-}
-
-.float{
-  background-image: url(../images/ben-tiny.jpg), linear-gradient(#fff, #fff 25%, #e6e6e6);
-  border-radius: 50%;
-  box-shadow: 0 3px 7px 0 #4f4a65;
-  border: 2px solid #55acee !Important;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-}
-
-.float:focus, .float:active:focus, .float.active:focus {
-  background-image: url(../images/ben-tiny.jpg), linear-gradient(#fff, #fff 25%, #e6e6e6);
-  border-radius: 50%;
-  border: 2px solid #dd4b39 !Important;
-  outline: 0 none;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-}
-
-.btn-group {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 61px;
-  height: 61px;
-  z-index: 100;
-  display: inline;
-  text-decoration: none;
-  border: none;
+  .btn-social {
+   padding: 9px 11px 9px 11px;
+   border-radius: 50%;
+  }
+  .btn-social-nav {
+   text-transform: uppercase;
+   color: #fff;
+   border-bottom: 1px solid #d3d1dd;
+   padding: 15px 15px;
+   font-size: 25px;
+   letter-spacing: 1px;
+   text-align: center;
+  }
 }
 
 .social-mobile {
@@ -114,13 +56,62 @@
 .social-mobile li {
   display: block;
   list-style: none outside none;
-  margin: 3px 0 15px 0;
+  margin: 10px 0 10px 0;
 }
 
 .social-mobile a {
   width: 61px;
   height: 61px;
   padding: 12px 15px 12px 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .btn-social-lg {
+   display: none;
+   }
+  .social {
+   display: none;
+   }
+}
+
+@media screen and (min-width: 400px) {
+   .float {
+   display: none;
+   }
+}
+
+.float {
+  background-image: url(../images/ben-tiny.jpg), linear-gradient(#fff, #fff 25%, #e6e6e6);
+  border-radius: 50%;
+  box-shadow: 0 3px 7px 0 #4f4a65;
+  border: 2px solid #55acee !Important;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.float:focus, .float:active:focus, .float.active:focus {
+  background-image: url(../images/ben-tiny.jpg), linear-gradient(#fff, #fff 25%, #e6e6e6);
+  border-radius: 50%;
+  border: 2px solid #dd4b39 !Important;
+  outline: 0 none;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.btn-group {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 61px;
+  height: 61px;
+  z-index: 100;
+  display: inline;
+  text-decoration: none;
+  border: none;
 }
 
 .btn-google-plus {
