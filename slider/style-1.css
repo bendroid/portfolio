@@ -6,32 +6,11 @@ body {
 }
 
 .top-bar {
-	background-color: #55acee;
+	background-color: #f46149;
 	padding: 10px;
 	height: 45px;
 }
 
-#container-slide {
-	width: 100%;
-	overflow: scroll; /* Overflow should scroll */
-	left: 0px;
-	-webkit-overflow-scrolling: touch; /* This gives us scrollbars. */
-	position: fixed; /* This means we don't have to worry about overflow issues */
-	-webkit-transition: left 0.2s ease-in;
-	transition: left 0.2s ease-in;
-}
-
-#sub-container {
-	position: relative;
-}
-
-#content {
-	font-size: 1.5em;
-	box-sizing: border-box;
-	text-align: justify;	
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-}
 
 .menu-icon {
 	padding: 5px 7px 9px 5px;
@@ -44,6 +23,15 @@ body {
 	float: left;
 }
 
+#content {
+	font-size: 1.5em;
+	box-sizing: border-box;
+	text-align: justify;	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
 .menu-icon .bar {
 	background: white;
 	border-radius: 5px;
@@ -52,46 +40,8 @@ body {
 	margin: 5px 0 0 0;
 }
 
-.slide-in {
-	background-color: #55acee;
-	width: 270px;
-	position: absolute;
-	box-shadow: inset -20px 0 30px rgba(0,0,0,0.2);
-	top: 0;
-	left: -270px;
-	-webkit-transition: left 0.2s ease-in;
-	transition: left 0.2s ease-in;
-}
-
-.slide-in ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-.slide-in ul li {
-	padding: 10px;
-	font-weight: bold;
-	font-size: 2em;
-	border-bottom: 2px solid #3d6071;
-	color: #c4d6e0;
-}
-
-.slide-in ul li:hover {
-	background-color: #3d6071;
-	color: #fff;
-}
-
-.slide-in.on {
-	left: 0px !important;
-}
-
-#container-slide.on {
-	left: 270px !important;
-}
-
 .drop-down {
-	background-color: #55acee;
+	background-color: #f4f1e1;
 	display: none;
 }
 
@@ -106,7 +56,7 @@ body {
 	font-weight: bold;
 	font-size: 1.3em;
 	border-bottom: 2px solid #fff;
-	color: #fff;
+	color: #9e9e86;
 }
 
 /* IGNORE =========================== */
@@ -139,6 +89,7 @@ body {
 }
 
 .travel a {
+	font-family: 'Georgia', serif;
 	text-decoration: none;
 	border-bottom: 1px solid #f9f9f9;
 	color: #f9f9f9;
