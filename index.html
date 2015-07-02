@@ -17,20 +17,20 @@
     <link href="css/paper/bootstrap.min.css" rel="stylesheet">
 	  <link href="css/theme.css" rel="stylesheet">
 	  
-	  <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/shCore.css" />
 	<link rel="stylesheet" type="text/css" href="css/shThemeDefault.css" />
 	
 	  <link rel="stylesheet" href="css/font-awesome.min.css">
 	  <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic' rel='stylesheet' type='text/css'>
-
+    
   </head>
 <body>
 
 <!-- ====================  FIXED NAVBAR ================================= -->
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -65,11 +65,9 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-  
-  <div class="container">
-		<a href="#" class="trigger trigger-left" style="float: left;" onclick="triggerLeft(event)"><span class="glyphicon glyphicon-align-justify"></span></a>
-		<a href="#" class="trigger trigger-right" style="float: right;" onclick="triggerRight(event)"><span class="glyphicon glyphicon-align-justify"></span></a>
-		
+
+
+ <div class="container-fluid">
 <div id="swipeme" class="main">
 		<div id="swipeme-left" class="panel panel-left">
 			<div class="page-header">
@@ -85,10 +83,11 @@
 			<p>In version 2 I intend to rebuild SwipeMe from the ground-up, removing all CSS requirements and instead managing the menu transitions and positioning with Javascript - using CSS translations and fallbacks where possible.</p>
 		</div>
 		</div>
+
 <!-- ===================== CONTENT ================== -->
 
 <!-- ===================== HEADER =================== -->
-<div class="container">
+<div class="container-fluid">
   <div class="media">
     <div class="media-left media-top">
 	  <img class="media-object" href="#" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="holder.js/64x64" alt="Ben Collins" src="images/ben-sm.jpg" data-holder-rendered="true" style="width: 90px; height: 90px;">
@@ -99,17 +98,18 @@
     <div class="social">
     <div class="media-body">
       <h2 class="pull-right">
-      <a href="#" class="btn btn-social btn-lg btn-github fa fa-github"></a>
-      <a href="#" class="btn btn-social btn-lg btn-twitter fa fa-twitter"></a>
-      <a href="#" class="btn btn-social btn-lg btn-google-plus fa fa-google-plus"></a>
-      <a href="#" class="btn btn-social btn-lg btn-linkedin fa fa-linkedin"></a>
+      <a href="#" class="btn btn-lg btn-github fa fa-github"></a>
+      <a href="#" class="btn btn-lg btn-twitter fa fa-twitter"></a>
+      <a href="#" class="btn btn-lg btn-google-plus fa fa-google-plus"></a>
+      <a href="#" class="btn btn-lg btn-linkedin fa fa-linkedin"></a>
 	  </h2>
     </div>
     </div>
   </div>
+</div><!-- /.container -->
 
-</div>
-<!--<div class="social-mobile">-->
+
+
   <div class="dropup">
     <div class="btn-group">
       <a class="btn float dropdown-toggle" data-toggle="dropdown" href="#"></a>
@@ -122,21 +122,10 @@
         </ul>
     </div>
   </div>
-</div>
+
 <!-- ===================== BODY =================== -->
-<div class="slide-in">
-	<ul class="tk-museo-sans">
-		<li>HOME</li>
-		<li>FORUM</li>
-		<li>TUTORIALS</li>
-		<li>RESOURCES</li>
-	</ul>
-</div>
 
-		
-			
-
-<div class="container">
+<div class="container-fluid">
   <div class="projects">
     <p>For now this is just my template for the future projects I will be creating while completing my <a href="https://udacity.com" target="blank">Udacity</a> Nanodegree. This portfolio was built using the <a href="http://getbootstrap.com" target="blank">Bootstrap</a> framework and <a href="http://fontawesome.io" target="blank">Font Awesome</a>. I've added some additional customizations too! My main focus is on mobility. This page will be endlessly modified and updated as I learn more throughout this program. Please don't consider this a "finished" product at this point. Take a look at my <a href="#projects">projects</a> below.</p>
   </div>
@@ -144,7 +133,7 @@
 
 <!-- ===================== PROJECTS GROUP =================== -->
 
-<div class="container">
+<div class="container-fluid">
 <h1>Projects</h1>
   <div class="row">
     <div class="col-sm-6 col-md-4">
@@ -178,13 +167,13 @@
       </div>
     </div>
   </div>
-</div>
+</div><!-- /.container -->
 
 <!-- ============================ END PROJECTS GROUP ========================== -->
 
 <!-- ============================= MODAL CAROUSEL ========================== -->
 
-<div class="container border">
+<div class="container-fluid border">
 <button class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -199,13 +188,13 @@
                 </div>
               </div>
               <div class="item">
-                <img class="img-responsive" src="http://placehold.it/1200x600/" alt="...">
+                <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt="...">
                 <div class="carousel-caption">
                 Another Image
                 </div>
               </div>
                 <div class="item">
-                  <img class="img-responsive" src="http://placehold.it/1200x600/" alt="...">
+                  <img class="img-responsive" src="http://placehold.it/1200x600/fcf00c/000&text=Three" alt="...">
                   <div class="carousel-caption">
                   Another Image
                   </div>
@@ -224,7 +213,7 @@
 
 <!-- ==================== SINGLE MEDIA ITEM =========================== -->
 
-<div class="container border">
+<div class="container-fluid border">
   <div class="media">
     <div class="media-left">
       <img class="media-object" href="#" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="holder.js/64x64" alt="64x64" src="images/ben-sm.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;">
@@ -243,7 +232,7 @@
 
 <!-- ==================== MEDIA GROUP INLINE ===================================== -->
 
-<div class="container border">
+<div class="container-fluid border">
   <div class="media">
     <div class="media-left">
       <img class="media-object" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="holder.js/64x64" alt="64x64" src="images/ben-sm.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;">
@@ -289,7 +278,7 @@
 
 <!-- ==================== MEDIA GROUP ALTERNATING ===================================== -->
 
-<div class="container border">
+<div class="container-fluid border">
   <div class="media">
     <div class="media-left">
       <img class="media-object" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="holder.js/64x64" alt="64x64" src="images/ben-sm.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;">
@@ -336,7 +325,7 @@
 <!-- ==================== FOOTER =================================================== -->
 
 <footer class="footer">
-  <div class="container">
+  <div class="container-fluid">
     <h4 class="pull-right">
       <a href="#" class="btn btn-lg btn-github fa fa-github"></a>
       <a href="#" class="btn btn-lg btn-twitter fa fa-twitter"></a>
@@ -364,8 +353,10 @@
 </div>
 </div>
 </div>
-		  
-		  
+
+
+</div><!-- /.container -->
+
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -378,6 +369,5 @@
 	<script type="text/javascript" src="js/application.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!--<script src="hammer.js"></script>-->
   </body>
 </html>
